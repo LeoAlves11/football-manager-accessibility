@@ -12,12 +12,12 @@ própria, e **narra as partidas** com uma voz de locutor.
 
 ## Download
 
-[Baixar o FM Acessível (FMAcessivel.exe)](https://github.com/LeoAlves11/football-manager-accessibility/releases/latest/download/FMAcessivel.exe)
+[Baixar o FM Acessível (FMAcessivel.exe)](https://github.com/LeoAlves11/football-manager-accessibility/releases/download/v0.1.0/FMAcessivel.exe)
 
 É um único arquivo, que já traz tudo o que precisa instalar. Não é preciso extrair nada: basta
-baixar e abrir. Este link sempre baixa a versão mais recente.
+baixar e abrir.
 
-Se preferir, a página de [Releases](https://github.com/LeoAlves11/football-manager-accessibility/releases/latest)
+Se preferir, a página de [Releases](https://github.com/LeoAlves11/football-manager-accessibility/releases)
 também tem o **FMAcessivel.zip**, com o mesmo programa, o manual em texto (LEIA-ME.txt) e as licenças.
 
 ## O que você precisa
