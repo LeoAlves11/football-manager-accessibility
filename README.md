@@ -12,9 +12,13 @@ própria, e **narra as partidas** com uma voz de locutor.
 
 ## Download
 
-Baixe o arquivo **FMAcessivel.zip** na página de
-[Releases](https://github.com/LeoAlves11/football-manager-accessibility/releases/latest) e extraia em uma pasta
-de sua preferência (por exemplo, `Documentos\FMAcessivel`).
+[Baixar o FM Acessível (FMAcessivel.exe)](https://github.com/LeoAlves11/football-manager-accessibility/releases/latest/download/FMAcessivel.exe)
+
+É um único arquivo, que já traz tudo o que precisa instalar. Não é preciso extrair nada: basta
+baixar e abrir. Este link sempre baixa a versão mais recente.
+
+Se preferir, a página de [Releases](https://github.com/LeoAlves11/football-manager-accessibility/releases/latest)
+também tem o **FMAcessivel.zip**, com o mesmo programa, o manual em texto (LEIA-ME.txt) e as licenças.
 
 ## O que você precisa
 
@@ -24,7 +28,7 @@ de sua preferência (por exemplo, `Documentos\FMAcessivel`).
   Windows. Para uma voz em português, instale a voz "Português (Brasil)" em Configurações do
   Windows, Hora e idioma, Fala.
 
-Não é preciso instalar .NET nem mais nada: tudo vem no pacote.
+Não é preciso instalar .NET nem mais nada: tudo vem dentro do FMAcessivel.exe.
 
 ## Instalação
 
@@ -124,7 +128,8 @@ O botão **Testar narrador** toca um exemplo de narração de gol.
 
 No menu Jogo, escolha o seu Football Manager e depois **Remover o mod**. Para remover também o
 BepInEx (o carregador de mods), apague da pasta do jogo: `winhttp.dll`, `doorstop_config.ini`,
-`.doorstop_version` e as pastas `BepInEx` e `dotnet`. Depois, apague a pasta do FM Acessível.
+`.doorstop_version` e as pastas `BepInEx` e `dotnet`. Por fim, apague o `FMAcessivel.exe` e a
+pasta `%LocalAppData%\FMAcessivel` (configurações e arquivos temporários do programa).
 
 ## Licenças e créditos
 
