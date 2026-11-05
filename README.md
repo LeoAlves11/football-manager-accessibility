@@ -7,12 +7,12 @@ O FM Acessível é um programa que roda ao lado do jogo. Ele mostra a tela atual
 como uma lista que você percorre com as setas, fala cada item com o NVDA, o JAWS ou com uma voz
 própria, e **narra as partidas** com uma voz de locutor.
 
-> **Versão de testes (0.1.0).** Esta é a primeira versão pública. Algumas telas podem aparecer
+> **Versão de testes (0.2.0).** Algumas telas podem aparecer
 > incompletas ou com nomes estranhos. Relatos de problemas são muito bem-vindos na aba Issues.
 
 ## Download
 
-[Baixar o FM Acessível (FMAcessivel.exe)](https://github.com/LeoAlves11/football-manager-accessibility/releases/download/v0.1.0/FMAcessivel.exe)
+[Baixar o FM Acessível (FMAcessivel.exe)](https://github.com/LeoAlves11/football-manager-accessibility/releases/download/v0.2.0/FMAcessivel.exe)
 
 É um único arquivo, que já traz tudo o que precisa instalar. Não é preciso extrair nada: basta
 baixar e abrir.
@@ -47,18 +47,37 @@ vezes, o jogo abre no tempo normal.
 ## Como usar
 
 Use a janela do FM Acessível, não a janela do jogo. O jogo continua rodando ao fundo e reage a
-tudo o que você faz na lista.
+tudo o que você faz na janela.
 
-A janela tem duas listas:
+A janela tem duas partes:
 
-- **Tela do jogo:** tudo o que está na tela agora. Painéis aparecem como `== Nome do painel ==`,
-  seguidos dos textos e controles daquele painel. Diálogos e janelas por cima aparecem primeiro.
-- **Histórico de falas:** tudo o que foi falado, para reler com calma. Alterne entre as listas
-  com **F6**.
+- **Tela do jogo:** tudo o que está na tela agora. Diálogos e janelas por cima aparecem primeiro.
+- **Histórico de falas:** tudo o que foi falado, para reler com calma. Alterne entre as duas
+  partes com **F6**.
 
-Quando uma tela nova abre, o FM Acessível fala o título. A lista é atualizada sozinha.
+Quando uma tela nova abre, o FM Acessível fala o título. A tela é atualizada sozinha.
 
-### Teclas na lista "Tela do jogo"
+A tela do jogo pode aparecer de dois jeitos. No modo automático, o programa escolhe sozinho:
+página quando o NVDA ou o JAWS estão abertos, lista quando não estão. Para escolher manualmente,
+use o menu **Voz**, **Configurações**, opção **Modo de exibição**.
+
+### Modo página (com NVDA ou JAWS)
+
+A tela do jogo vira uma página, como um site, e você navega com o **modo de navegação** do seu
+leitor de tela, do mesmo jeito que na internet:
+
+- **Setas:** ler linha a linha.
+- **H ou 2:** pular entre as telas (painéis) abertas.
+- **3:** pular entre os cartões clicáveis, como "Orçamentos de recrutamento". O conteúdo do cartão
+  vem logo abaixo do título, uma informação por linha.
+- **B:** pular entre botões.
+- **Enter ou Espaço:** ativar o botão.
+- **Listas suspensas:** ao lado de cada uma ficam os botões **Opção anterior** e **Próxima opção**.
+- **Campos de texto:** digite e pressione **Enter** para enviar ao jogo.
+
+### Modo lista (sem leitor de tela)
+
+O próprio FM Acessível lê cada item com a voz do Windows:
 
 - **Setas para cima e para baixo:** navegar pelos itens.
 - **Enter:** ativar o item (clicar no botão, marcar a caixa, escolher a opção). Em campos de
@@ -68,13 +87,17 @@ Quando uma tela nova abre, o FM Acessível fala o título. A lista é atualizada
 - **Ctrl + seta para baixo e Ctrl + seta para cima:** pular direto para o próximo controle
   (botão, caixa, lista), ignorando os textos.
 - **Letras:** pular para o próximo item que começa com aquela letra.
+
+### Teclas nos dois modos
+
 - **Backspace:** voltar para a tela anterior.
 - **F3 ou Ctrl+Enter:** Continuar (avançar o jogo).
 - **F2:** falar o título da tela atual.
-- **F5:** atualizar a lista.
+- **F5:** atualizar a tela.
 - **Ctrl+P:** placar da partida.
 - **Ctrl+R:** repetir a última narração.
 - **Esc:** silenciar.
+- **F9:** gerar um relatório da tela (veja "Encontrou uma tela confusa?").
 - **F1:** ouvir a ajuda.
 
 ### Teclas que funcionam em qualquer lugar
@@ -89,6 +112,13 @@ Estes atalhos funcionam mesmo com a janela do jogo em primeiro plano:
 - **Ctrl+Alt+R:** repetir a última narração.
 - **Ctrl+Alt+N:** ligar ou desligar o narrador.
 - **Ctrl+Alt+S:** silenciar.
+
+## Encontrou uma tela confusa?
+
+Com a tela problemática aberta, pressione **F9** (ou use o menu Ajuda, **Gerar relatório da
+tela**). O FM Acessível salva na Área de Trabalho um arquivo chamado
+`FMAcessivel-relatorio-...txt`. Envie esse arquivo na aba Issues, dizendo o que estava errado.
+Ele mostra exatamente como o jogo monta aquela tela, e com isso a leitura pode ser corrigida.
 
 ## Narrador de partidas
 
@@ -121,7 +151,7 @@ O botão **Testar narrador** toca um exemplo de narração de gol.
   selecione a pasta onde fica o arquivo `fm.exe`.
 - **Um atalho Ctrl+Alt não funciona:** outro programa já usa aquela combinação. O FM Acessível
   avisa no Histórico de falas quais atalhos não puderam ser registrados.
-- **Uma tela aparece incompleta ou com nomes estranhos:** atualize com F5. Se continuar, abra um
+- **Uma tela aparece incompleta ou com nomes estranhos:** atualize com F5. Se continuar, gere um relatório com F9 e abra um
   relato na aba Issues dizendo em qual tela aconteceu.
 
 ## Desinstalar
